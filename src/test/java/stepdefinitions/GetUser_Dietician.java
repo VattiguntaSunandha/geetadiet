@@ -29,7 +29,7 @@ public class GetUser_Dietician {
 	
 	@Before
 	public void setUp() throws IOException {
-		FileInputStream fis = new FileInputStream("src\\test\\resources\\config\\config.properties");
+		FileInputStream fis = new FileInputStream("src/test/resources/config/config.properties");
 		properties.load(fis);
 		
 		RestAssured.baseURI = properties.getProperty("baseURI");
